@@ -2,13 +2,15 @@
   "name": "expense-freak-frontend",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/dmi201/expense-freak-frontend",
+  "homepage": "https://dmi201.github.io/expense-freak-frontend",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
